@@ -79,22 +79,15 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('http://www.transparenttextures.com/patterns/gplay.png');
+	background: url('../images/headshotcropped.jpg');
 	background-color: #2b3b8c;
-	  background-size: tile;
+	  background-size: cover;
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
 	background: url('../images/back3.jpg') no-repeat;
-	  background-size: cover;
-}
-
-.bl-main > section:nth-child(3) {
-	top: 50%;
-	left: 0;
-	background: url('../images/back4.jpg') no-repeat;
 	  background-size: cover;
 }
 
