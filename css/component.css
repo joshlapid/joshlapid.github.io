@@ -79,9 +79,10 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/headshotcropped.jpg');
+	background: url('../images/picture.jpg');
 	background-color: #2b3b8c;
 	  background-size: cover;
+		background-position: center;
 }
 
 .bl-main > section:nth-child(2) {
@@ -89,6 +90,7 @@ a:hover {
 	left: 50%;
 	background: url('../images/back3.jpg') no-repeat;
 	  background-size: cover;
+
 }
 
 .bl-main > section:nth-child(4) {
