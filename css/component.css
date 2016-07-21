@@ -666,5 +666,7 @@ section.bl-expand .bl-icon-close {
 @media (max-width: 485px) {
 	#box1_heading {
 		font-size: 3em;
+		margin-top: 450px;
+		padding: 10px;
 	}
 }
