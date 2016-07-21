@@ -662,3 +662,9 @@ section.bl-expand .bl-icon-close {
 		margin-top: 475px;
 	}
 }
+
+@media (max-width: 485px) {
+	#box1_heading {
+		font-size: 3em;
+	}
+}
