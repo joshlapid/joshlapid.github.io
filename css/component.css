@@ -79,7 +79,7 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/headshot2.jpg');
+	background: url('../images/headshot3.jpg');
 	background-color: #2b3b8c;
 	  background-size: cover;
 		background-position: center;
@@ -135,7 +135,11 @@ a:hover {
 	letter-spacing: 2px;
 	font-weight: 700;
 	text-transform: uppercase;
-	text-shadow: 0 0 
+	text-shadow: 0 0 3px black;
+}
+
+#box1_heading {
+
 }
 
 .bl-icon {
