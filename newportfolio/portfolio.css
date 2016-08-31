@@ -1,3 +1,16 @@
+body {
+  background-color: black;
+  color: white;
+}
+
 h1 {
-  color: red;
+  color: white;
+}
+
+.press-to-continue {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }
