@@ -29,11 +29,20 @@
         </div>
       </section>
 
-      <section ng-show="keyPressed" ng-controller="SectionController as section">
+      <section ng-controller="TabController as tab">
+        <div ng-show="tab.isSet(1)">
+          <h4>About</h4>
+        </div>
+        <div ng-show="tab.isSet(2)">
+          <h4>Works</h4>
+        </div>
+        <div ng-show="tab.isSet(3)">
+          <h4>Contact</h4>
+        </div>
         <div class="col-sm-12"></div>
-          <h3>{{section.section.name}}</h3>
-          <h3>Works</h3>
-          <h3>Contact</h3>
+          <h3><a ng-click="tab.setTab(1)" href="">About</a></h3>
+          <h3><a ng-click="tab.setTab(2)" href="">Works</a></h3>
+          <h3><a ng-click="tab.setTab(3)" href="">Contact</a></h3>
         </div>
       </section>
 
