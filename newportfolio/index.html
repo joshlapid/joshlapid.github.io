@@ -19,9 +19,9 @@
     <link href="portfolio.css" rel ="stylesheet"/>
 
   </head>
-  <body>
+  <body ng-controller="ShowAllController as show">
 
-    <div class="container">
+    <div class="container" ng-click="show.changeShow(true)">
       <section>
         <div class="col-sm-12 text-center">
           <h1>Josh Lapid</h1>
@@ -29,7 +29,7 @@
         </div>
       </section>
 
-      <section ng-controller="TabController as tab">
+      <section ng-show="show.showAll" ng-controller="TabController as tab">
         <div ng-show="tab.isSet(1)">
           <h4>About</h4>
         </div>
@@ -39,7 +39,7 @@
         <div ng-show="tab.isSet(3)">
           <h4>Contact</h4>
         </div>
-        <div class="col-sm-12"></div>
+        <div class="col-sm-12">
           <h3><a ng-click="tab.setTab(1)" href="">About</a></h3>
           <h3><a ng-click="tab.setTab(2)" href="">Works</a></h3>
           <h3><a ng-click="tab.setTab(3)" href="">Contact</a></h3>
