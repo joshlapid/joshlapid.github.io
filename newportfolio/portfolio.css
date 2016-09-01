@@ -9,6 +9,7 @@ h1 {
 
 .press-to-continue {
   animation: blinker 1.5s linear infinite;
+  padding-bottom: 100%;
 }
 
 @keyframes blinker {
