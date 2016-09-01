@@ -15,3 +15,53 @@ h1 {
 @keyframes blinker {
   50% { opacity: 0.0; }
 }
+
+@font-face {
+  font-family: 'AlienEncounters';
+  src: url(sf-alien-encounters.regular.ttf) format("truetype");
+}
+
+gt{
+	position: absolute;
+	text-align: center;
+	font-size: 10em;
+	font-family: AlienEncounters;
+	color: #00f6f6;
+	text-shadow: 0px 0px 10px #ff33cc;
+
+	margin: auto;
+	top: 25%;
+	animation: textWaveMT 3s infinite linear, titleEnter 3s 1 linear;
+	left: 0;
+  right: 0;
+}
+
+@keyframes titleEnter{
+	0%{
+		font-size: 5px;
+
+	}
+}
+
+@keyframes textWaveMT{
+	0%{
+		text-shadow: 0px 0px 6px #d66c00, 0px 0px 8px #ff33cc;
+
+	}
+	25%{
+		text-shadow: 0px 0px 7px #d66c00, 0px 0px 9px #ff33cc;
+
+	}
+	50%{
+		text-shadow: 0px 0px 10px #d66c00, 0px 0px 20px #ff33cc;
+
+	}
+	75%{
+		text-shadow: 0px 0px 7px #d66c00, 0px 0px 9px #ff33cc;
+
+	}
+	100%{
+		text-shadow: 0px 0px 6px #d66c00, 0px 0px 8px #ff33cc;
+
+	}
+}
