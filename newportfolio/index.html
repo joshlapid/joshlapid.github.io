@@ -18,18 +18,42 @@
     <!-- CSS -->
     <link href="portfolio.css" rel ="stylesheet"/>
 
-  </head>
-  <body ng-controller="ShowAllController as show">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:700|Yellowtail" rel="stylesheet">
 
-    <div class="container" ng-click="show.changeShow(true)">
+  </head>
+  <body ng-controller="ShowAllController as show" ng-click="show.changeShow(true)"  >
+
+    <div class="wrapper">
+     <h1>JOSH LAPID</h1>
+     <h2>Web Developer</h2>
+
+      <svg height="320" width="400" class="logo-triangle">
+          <defs>
+              <linearGradient id="grad1" x1="0%" y1="100%" x2="100%" y2="0%">
+                  <stop offset="0%" style="stop-color:rgb(50,50,50);stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:black;stop-opacity:1" />
+              </linearGradient>
+          </defs>
+          <filter id="dropshadow" height="130%">
+              <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+              <feOffset dx="2" dy="2" result="offsetblur" />
+              <feMerge>
+                  <feMergeNode/>
+                  <feMergeNode in="SourceGraphic" />
+              </feMerge>
+          </filter>
+          <polygon points="0,0 400,0 200,300" stroke="#36e2f8" stroke-width="3" />
+      </svg>
+
+    </div>
+
+    <div class="container" >
       <section>
-        <div class="col-sm-12 text-center">
-          <gt>Josh Lapid</gt>
-          <h2>Web Developer</h2>
-        </div>
+
       </section>
 
-      <section ng-show="show.showAll" ng-controller="TabController as tab">
+      <section class="menu" ng-show="show.showAll" ng-controller="TabController as tab">
         <div ng-show="tab.isSet(1)">
           <h4>About</h4>
         </div>
@@ -48,7 +72,7 @@
 
       <section ng-hide="show.showAll" class="press-to-continue">
         <div class="col-sm-12 text-center">
-          <h4>Press any key to continue</h4>
+          <h4>Click to continue</h4>
         </div>
       </section>
 

@@ -1,67 +1,97 @@
+@font-face {
+  font-family: 'AlienEncounters';
+  src: url(sf-alien-encounters.regular.ttf) format("truetype");
+}
+
 body {
   background-color: black;
   color: white;
 }
 
+/* Page Header */
+
 h1 {
-  color: white;
+  color: #C6CBF5;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 120px;
+  font-weight: 1000;
+  line-height: 1.2;
+  left: 50%;
+  margin: 0;
+  margin-left: -420px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 80px;
+  width: 852px;
+  z-index: 11;
+  background: -webkit-linear-gradient(top, #151C60, #C6CBF5 40%, black 40%, #E1A0CE 65%, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: white;
 }
 
+h2 {
+  color: #d100b1;
+  display: block;
+  font-family: 'Yellowtail', cursive;
+  font-size: 70px;
+  margin-right: -8em;
+  position: absolute;
+  text-shadow: 0 0 1px #d100b1, 0 -3px 3px rgba(255, 255, 255, 0.8), 0 3px 3px rgba(0, 0, 0, 0.5), 0 0 15px #d100b1, 0 0 45px rgba(209, 0, 177, 0.8);
+  text-align: center;
+  text-decoration: underline;
+  text-transform: none;
+  -webkit-transform: skew(-10deg) rotate(-10deg);
+  -ms-transform: skew(-10deg) rotate(-10deg);
+  transform: skew(-10deg) rotate(-10deg);
+  top: 190px;
+  width: 100%;
+  z-index: 11;
+}
+
+.logo-triangle {
+  -webkit-animation: dash 6s linear forwards;
+  animation: dash 6s linear forwards;
+  fill: url(#grad1);
+  -webkit-filter: url(#dropshadow);
+  filter: url(#dropshadow);
+  left: 50%;
+  margin-left: -200px;
+  position: absolute;
+  stroke-dasharray: 1200;
+  stroke-dashoffset: 1200;
+  top: 6em;
+  z-index: 8;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Press to Continue blinker */
 .press-to-continue {
   animation: blinker 1.5s linear infinite;
   padding-bottom: 100%;
+  margin-top: 60%;
 }
 
 @keyframes blinker {
   50% { opacity: 0.0; }
 }
 
-@font-face {
-  font-family: 'AlienEncounters';
-  src: url(sf-alien-encounters.regular.ttf) format("truetype");
-}
+/* Menu */
 
-gt{
-	position: absolute;
-	text-align: center;
-	font-size: 10em;
-	font-family: AlienEncounters;
-	color: #00f6f6;
-	text-shadow: 0px 0px 10px #ff33cc;
-
-	margin: auto;
-	top: 25%;
-	animation: textWaveMT 3s infinite linear, titleEnter 3s 1 linear;
-	left: 0;
-  right: 0;
-}
-
-@keyframes titleEnter{
-	0%{
-		font-size: 5px;
-
-	}
-}
-
-@keyframes textWaveMT{
-	0%{
-		text-shadow: 0px 0px 6px #d66c00, 0px 0px 8px #ff33cc;
-
-	}
-	25%{
-		text-shadow: 0px 0px 7px #d66c00, 0px 0px 9px #ff33cc;
-
-	}
-	50%{
-		text-shadow: 0px 0px 10px #d66c00, 0px 0px 20px #ff33cc;
-
-	}
-	75%{
-		text-shadow: 0px 0px 7px #d66c00, 0px 0px 9px #ff33cc;
-
-	}
-	100%{
-		text-shadow: 0px 0px 6px #d66c00, 0px 0px 8px #ff33cc;
-
-	}
+.menu {
+  position: absolute;
+  top: 500px;
 }
