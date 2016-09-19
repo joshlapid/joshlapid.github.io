@@ -21,7 +21,7 @@ $(document).ready(function() {
   owl.owlCarousel({
 
       itemsCustom : [
-        [0, 2],
+        [0, 4],
         [450, 4],
         [600, 4],
         [700, 4],
