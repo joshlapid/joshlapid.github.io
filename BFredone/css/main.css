@@ -1,0 +1,79 @@
+/* Navbar */
+#navbar {
+  border-radius: 0px;
+}
+
+.navbar-header {
+  color: #e32;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+/* Top Carousel */
+.top-carousel-image {
+  height: 100%;
+  width: 100%;
+}
+
+.category {
+  background: #e32;
+  font-family: 'Roboto';
+  color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0px 7px;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.text-content {
+  background: rgba(0,0,0,0.7);
+  display: table;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  padding-bottom: 100%;
+  padding-top: 100%
+}
+
+.hover-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.text-content:hover {
+  opacity: 1;
+}
+
+/* Trending */
+
+.trending-image {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* BuzzFeed News */
+.buzzfeed-news-container {
+  padding-top: 0px;
+  border: 1px solid grey;
+  height: 1000px;
+}
+
+.buzzfeed-news-image{
+  width: 100%;
+}
+
+/* Sections */
+.section-header {
+  background-color: #e32;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
