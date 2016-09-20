@@ -58,6 +58,13 @@
   margin-bottom: 10px;
 }
 
+.trending-rank {
+  background-color: #e32;
+  color: white;
+  position: absolute;
+  padding: 2px 7px;
+}
+
 /* BuzzFeed News */
 .buzzfeed-news-container {
   padding-top: 0px;
