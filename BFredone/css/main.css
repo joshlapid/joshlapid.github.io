@@ -99,7 +99,7 @@
 
 .buzzfeed-news-container {
   padding-top: 0px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
   border: 1px solid grey;
   height: 100%;
 }
@@ -129,4 +129,27 @@
 }
 
 .buzzfeed-article-anchor {
+  font-size: 15pt;
 }
+
+.buzzfeed-article-comments {
+  position: absolute;
+  bottom: 15px;
+  left: 30px;
+}
+
+.buzzfeed-article-title {
+  height: 140px;
+}
+
+/* Media Queries */
+
+@media (max-width: 990px) {
+  .buzzfeed-article-anchor {
+    font-size: 12pt
+  }
+
+@media (max-width: 414px) {
+  .buzzfeed-article-anchor {
+    font-size: 10pt
+  }
