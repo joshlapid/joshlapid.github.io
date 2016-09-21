@@ -9,6 +9,16 @@
   font-size: 2em;
 }
 
+/* Sections */
+
+.section-header {
+  background-color: #e32;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 10px;
+  padding-bottom: 3px;
+}
+
 /* Top Carousel */
 .top-carousel-image {
   height: 100%;
@@ -85,24 +95,27 @@
   opacity: .85;
 }
 
-
-
 /* BuzzFeed News */
+
 .buzzfeed-news-container {
   padding-top: 0px;
   border: 1px solid grey;
   height: 1000px;
 }
 
-.buzzfeed-news-image{
+.buzzfeed-news-image {
   width: 100%;
 }
 
-/* Sections */
-.section-header {
-  background-color: #e32;
+.buzzfeed-news-title {
+  background: rgba(0,0,0,0.6);
   color: white;
-  font-family: 'Roboto', sans-serif;
-  padding-left: 10px;
-  padding-bottom: 3px;
+  font-size: 36px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-top: 2px solid #e32;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 3px 8px;
 }
