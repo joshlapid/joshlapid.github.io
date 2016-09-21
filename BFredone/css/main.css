@@ -127,13 +127,19 @@
 .buzzfeed-article-image {
 }
 
+.buzzfeed-article-anchor-sub {
+  color: grey;
+  text-decoration: none !important;
+}
+
 .buzzfeed-article-anchor {
   color: black;
   font-size: 15pt;
   text-decoration: none !important;
 }
 
-.buzzfeed-article-anchor:hover {
+.buzzfeed-article-anchor:hover,
+.buzzfeed-article-anchor-sub:hover {
   color: #e32;
 }
 
