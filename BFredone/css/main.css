@@ -28,7 +28,7 @@
 }
 
 .text-content {
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.6);
   display: table;
   color: white;
   position: absolute;
@@ -53,8 +53,8 @@
 
 /* Trending */
 
-.trending-image {
-  width: 100%;
+.trending-content {
+  background-size: contain;
   margin-bottom: 10px;
 }
 
@@ -64,6 +64,28 @@
   position: absolute;
   padding: 2px 7px;
 }
+
+.trending-shade {
+  position: relative;
+  width: 100%;
+}
+
+.trending-title {
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.trending-anchor {
+  opacity: 0;
+}
+
+.trending-anchor:hover {
+  opacity: .85;
+}
+
+
 
 /* BuzzFeed News */
 .buzzfeed-news-container {
