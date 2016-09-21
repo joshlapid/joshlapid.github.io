@@ -130,6 +130,11 @@
 .buzzfeed-article-anchor {
   color: black;
   font-size: 15pt;
+  text-decoration: none !important;
+}
+
+.buzzfeed-article-anchor:hover {
+  color: #e32;
 }
 
 .buzzfeed-article-anchor-container {
@@ -137,7 +142,7 @@
   margin-left: 10px;
 }
 
-.buzzfeed-article-comments {
+.buzzfeed-article-info {
   position: absolute;
   bottom: 15px;
   left: 30px;
@@ -145,6 +150,11 @@
 
 .buzzfeed-article-title {
   height: 140px;
+}
+
+.buzzfeed-article-subheads {
+  font-size: 8pt;
+  margin-right: 10px;
 }
 
 /* Media Queries */
