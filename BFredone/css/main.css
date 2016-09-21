@@ -99,7 +99,6 @@
 
 .buzzfeed-news-container {
   padding-top: 0px;
-  padding-bottom: 10px;
   border: 1px solid grey;
   height: 100%;
 }
@@ -129,7 +128,13 @@
 }
 
 .buzzfeed-article-anchor {
+  color: black;
   font-size: 15pt;
+}
+
+.buzzfeed-article-anchor-container {
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .buzzfeed-article-comments {
