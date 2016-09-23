@@ -65,6 +65,7 @@
 
 .trending-content {
   background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 
@@ -93,6 +94,10 @@
 
 .trending-anchor:hover {
   opacity: .85;
+}
+
+.trending-title-mobile {
+  display: none;
 }
 
 /* BuzzFeed News */
@@ -167,6 +172,7 @@
 
 .video-content {
   background-size: contain;
+  background-repeat: no-repeat;
   margin-bottom: 10px;
 }
 
@@ -208,12 +214,50 @@
 
 /* Media Queries */
 
-@media (max-width: 990px) {
+@media (max-width: 990px) and (min-width: 767px) {
   .buzzfeed-article-anchor {
-    font-size: 12pt
+    font-size: 12pt;
   }
+  .section-header {
+    font-size: 16pt;
+  }
+}
 
 @media (max-width: 414px) {
   .buzzfeed-article-anchor {
-    font-size: 10pt
+    font-size: 10pt;
   }
+
+  .buzzfeed-article-image {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .trending-anchor:hover {
+    opacity: 0;
+    z-index: -11;
+  }
+
+  .trending-title-mobile {
+    display: inline;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-top: 1px solid #e32;
+    font-size: 16pt;
+    text-decoration: none !important;
+    position: relative;
+    bottom: 40px;
+    left: 120px;
+    margin-bottom: -50px;
+    padding: 2px 5px;
+  }
+
+  .trending-content {
+    margin-bottom: -10px;
+  }
+
+  .video-title {
+    font-size: 12pt;
+  }
+}
