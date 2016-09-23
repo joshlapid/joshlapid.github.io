@@ -231,6 +231,10 @@
   .buzzfeed-article-image {
     margin-top: 10px;
   }
+
+  .buzzfeed-news-title {
+    font-size: 24pt;
+  }
 }
 
 @media (max-width: 767px) {
